@@ -1,9 +1,5 @@
-
-file = open('TheZenOfPython.txt','r')
-
-lines = file.readlines()
-
-for line in lines:
-    print(line)
+with open('TheZenOfPython.txt','r') as file:
+    for line in file:
+        print(line)
 
 file.close()
